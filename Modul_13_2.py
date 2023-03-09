@@ -1,6 +1,8 @@
 
 from .clean_stations.csv import stations, engine
 
+engine = create_engine('sqlite:///database.db')
+
 ins = stations.insert()
 
 ins = stations.insert().values(namber='USC00518838', latitude='21.21')
